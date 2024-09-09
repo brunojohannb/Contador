@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contador-Eliti</title>
+  <link rel="stylesheet" href="style-index.css">
+
+</head>
+<body>
+
+
+  <section>
+
+    <h1>Contador</h1>
+    <p id="Resultado">0</p>
+    <button onclick="Aumentar()">Mais</button>
+    <button onclick="Diminuir()">Menos</button>
+
+  </section>
+  <script>
+
+    let numero=0
+
+    function Aumentar(){
+       numero++
+       AtualizarNum()
+
+    }
+    function Diminuir(){
+       numero--
+       AtualizarNum()
+
+    }
+
+    function AtualizarNum() {
+        const p = document.querySelector("#Resultado")
+        p.innerText = numero
+
+
+    }
+
+  </script>
+
+
+</body>
+
+
+</html>
